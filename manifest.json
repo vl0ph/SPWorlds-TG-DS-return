@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "SPWorlds TeleGram DiScord return",
+  "version": "1.0",
+  "description": "Показывает кнопки Discord и Telegram на spworlds.ru (навайбкодил за 5 минут)",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://spworlds.ru/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
